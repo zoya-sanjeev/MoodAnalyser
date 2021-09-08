@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 public class MoodAnalyserTest {
     @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
+        MoodAnalyser classUnderTest = new MoodAnalyser();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
 }
