@@ -16,8 +16,8 @@ public class MoodAnalyserTest {
         String mood=moodAnalyser.analyseMood();
         Assert.assertThat(mood, CoreMatchers.is("SAD"));
     }
-    @Test public void analyseMood_SadMessage_HAPPY() throws Exception {
-        MoodAnalyser moodAnalyser = new MoodAnalyser("This is a happy message");
+    @Test public void analyseMood_NotASadMessage_HAPPY() throws Exception {
+        MoodAnalyser moodAnalyser = new MoodAnalyser("I am in any mood");
         
         String mood=moodAnalyser.analyseMood();
         Assert.assertThat(mood, CoreMatchers.is("HAPPY"));
